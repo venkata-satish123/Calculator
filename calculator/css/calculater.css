@@ -1,0 +1,84 @@
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: rgb(248, 222, 187);
+}
+
+.calculater {
+  margin-top: 40px;
+  background-color: rgba(32, 37, 45, 0.797);
+  width: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: -3px -3px 10px rgba(0, 0, 0, 0.562);
+}
+input {
+  width: 93%;
+  border: none;
+  outline: 0px;
+  height: 70px;
+  background-color: rgba(32, 37, 45, 0.04);
+  color: rgba(237, 240, 243, 0.803);
+  font-size: 30px;
+  padding: 10px;
+  caret-color: transparent;
+  font-family: "Times New Roman", Times, serif;
+}
+.btns {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 5px;
+  gap: 10px;
+  border: none;
+}
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(121, 120, 120, 0.697);
+  font-size: larger;
+  caret-color: transparent;
+  transition: 0.5s;
+  padding: 10px;
+  box-shadow: 0px 0px 40px 0px rgb(0, 0, 0);
+}
+button:hover {
+  background-color: rgba(156, 154, 154, 0.697);
+}
+#k {
+  background-color: rgba(217, 163, 81, 0.609);
+}
+#k:hover {
+  background-color: rgba(217, 163, 81, 0.822);
+}
+.equal {
+  background-color: rgba(47, 185, 95, 0.57);
+}
+.equal:hover {
+  background-color: rgba(47, 185, 95, 0.809);
+}
+.clear {
+  background-color: rgba(224, 126, 80, 0.562);
+}
+.clear:hover {
+  background-color: rgba(224, 126, 80, 0.835);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    flex-direction: column;
+    gap: 60px;
+  }
+  h1 {
+    text-align: center;
+    padding: 30px;
+  }
+  .content {
+    padding: 25px;
+  }
+}
